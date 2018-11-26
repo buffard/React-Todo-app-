@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "text": "learn react",
+      "id": 1
+    },
+    {
+      "text": "get a job",
+      "id": 2
+    },
+    {
+      "text": "afdsesf",
+      "id": 3
+    }
+  ]
+}
