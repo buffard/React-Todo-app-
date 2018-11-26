@@ -13,6 +13,10 @@ class App extends Component {
   setTodoItemState = (val) => {
     this.setState({todoItem: val})
   }
+//this will render our list as soon as we load. Otherwise it will only render when we add an todo item
+  componentDidMount() {
+    this.getTodos()
+  }
 
   getTodos() {
     fetch("http://localhost:5002/todos")
@@ -51,7 +55,7 @@ class App extends Component {
       <div className="TodoApp">
         <Title />
         <TodoFrom addTodo={this.addTodo} setTodoItemState={this.setTodoItemState}/>
-        <TodoList deleteTodo={this.deleteTodo} todos={this.state.data} />
+        <TodoList deleteTodo={this.deleteTodo} todos={this.state.data} componentDidMount={this.componentDidMount}/>
       </div>
     )
   }
