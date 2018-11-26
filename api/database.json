@@ -9,8 +9,12 @@
       "id": 2
     },
     {
-      "text": "afdsesf",
+      "text": "add new item",
       "id": 3
+    },
+    {
+      "text": "delete new item",
+      "id": 4
     }
   ]
 }
