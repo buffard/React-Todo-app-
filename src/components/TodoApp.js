@@ -38,17 +38,10 @@ class App extends Component {
 
   deleteTodo = (id) => {
     fetch(`http://localhost:5002/todos/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8"
-      },
-      body: JSON.stringify()
+      method: "DELETE"
     })
-    .then(e => e.json())
     .then(() => this.getTodos())
   }
-
-
 
   render() {
     return (
